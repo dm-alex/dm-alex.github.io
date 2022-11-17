@@ -1,0 +1,70 @@
+<!-- saved from url=(0039)https://saso5.github.io/WP6003-air-box/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>WP6003 Air Box Reader</title>
+    <meta name="viewport" content="width=480">
+    <script type="text/javascript" src="/WP6003.js"></script>
+</head>
+
+<body>
+    <h1>WP6003 Air Box Reader</h1>
+    <h2>VSON WP6003 Bluetooth APP Air Quality Detector for PM Formaldehyde TVOC</h2>
+    <div style="text-align: center;"><img src="./WP6003 Air Box Reader_files/vson-wp6003.jpg" width="300"></div>
+    <fieldset>
+        <legend>Read data:</legend>
+        <button onclick="enableNotifications()">Enable notifications</button><br>
+        <button onclick="readData()">Read sensor data</button><br>
+        <button onclick="sendCommand()">Send command</button><br>
+        <input type="checkbox" id="autoRefresh" name="autoRefresh" onclick="autoRefresh()">
+        <label for="autoRefresh">Auto refresh values (30s)</label>
+    </fieldset>
+    <fieldset>
+        <legend>Sensor calibration:</legend>
+        <div style="font-size: 14px">
+            Before sensor calibration procedure please follow these instructions:
+            <ol>
+                <li>Take the device to a place with fresh air (such as balcony, outdoor);
+                </li>
+                <li>Keep the device runnin for more than 10 minutes; then take it indoor
+                </li>
+            </ol>
+        </div>
+        <button onclick="calibrate()">Calibrate</button>
+    </fieldset>
+    <fieldset>
+        <legend>Console:</legend>
+        <div id="console"></div>
+    </fieldset>
+    <br><br>
+    <p>
+        <b>Links: </b>
+    </p>
+    <li><a href="http://www.vson.com.cn/English/Product/3614894931.html" target="_blank" rel="noopener">Official website</a>
+    </li>
+    <li><a href="https://play.google.com/store/apps/details?id=com.vson.smarthome" target="_blank" rel="noopener">Official app</a>
+    </li>
+    <li>Based on code <a href="https://github.com/zu2/wp6003" target="_blank" rel="noopener">zu2/wp6003</a>
+        <p></p>
+        <p>Use chrome developers tools for connection issues <a href="chrome://bluetooth-internals/#devices/">chrome://bluetooth-internals/#devices/</a></p>
+        <script>
+        
+
+        </script>
+        <style>
+        body {
+            max-width: 400px;
+            margin: 0 auto;
+            font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+
+        fieldset>* {
+            margin: 5px;
+        }
+
+        </style>
+    </li>
+</body>
+
+</html>
